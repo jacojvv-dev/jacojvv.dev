@@ -94,8 +94,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/jacojvv-dev/jacojvv.dev/edit/main/website/blog/",
+          editUrl: "https://github.com/jacojvv-dev/jacojvv.dev/edit/main/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
