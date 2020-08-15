@@ -2,7 +2,7 @@ module.exports = {
   title: "jacojvv.dev",
   tagline: "At the moment - it's just a blog",
   url: "https://jacojvv-dev.github.io",
-  baseUrl: "/jacojvv.dev/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
   organizationName: "jacojvv-dev", // Usually your GitHub org/user name.
