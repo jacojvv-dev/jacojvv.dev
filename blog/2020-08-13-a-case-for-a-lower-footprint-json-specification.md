@@ -174,7 +174,7 @@ fs.writeFileSync("100000.jsonb", JSONB.stringify(data));
 | JSON   |   68.8    |          -          |         -          |                    - |
 | JSON-B |   51.5    |        -17.3        |      -25.15%       |                 0%\* |
 
-\* _If you use my json-b implemenation on real world data, you'll probably lose information_
+\* _If you use my json-b implementation on real world data, you'll probably lose information_
 
 ### Yeah - ok. But GZIP fixes the issue you are trying to fix?
 
