@@ -12,6 +12,8 @@ As human beings we tend not to think about things too much once they work. We al
 
 I'd argue that we apply the same mindset to our daily tools and established patterns - without ever thinking about it too much either. Recently while downloading a 4.26 GB CSV file from an Azure Databricks instance I was reminded of an idea I had a few months ago; JSON can be optimised.
 
+<!--truncate-->
+
 ### JSON can be optimised?
 
 Yeah - anything can. Imagine I'd said the same thing about XML a good few years ago - blasphemy. I'd be stoned as soon as people could look away from their (irreplaceable) SOAP services to read my wild ideas!
