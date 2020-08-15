@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{63:function(a){a.exports=JSON.parse('{"allTagsPath":"/jacojvv.dev/blog/tags","slug":"api","name":"api","count":1,"permalink":"/jacojvv.dev/blog/tags/api"}')}}]);
