@@ -176,7 +176,7 @@ fs.writeFileSync("100000.jsonb", JSONB.stringify(data));
 
 ### Yeah - ok. But GZIP fixes the issue you are trying to fix?
 
-For the most part - it does. But we are trying to squeeze for the most we can get here
+For the most part - it does. But we are trying to squeeze out every byte we can.
 
 | Type             | Size (MB) | Size Reduction (MB) | Size Reduction (%) | Information Lost (%) |
 | :--------------- | :-------: | :-----------------: | :----------------: | -------------------: |
@@ -185,7 +185,7 @@ For the most part - it does. But we are trying to squeeze for the most we can ge
 
 ### Ok - so how much bandwith are we talking about saving using json-b and gzip?
 
-In the real world you'll probably not return 100000 rows at a time - so let's use a more [real world example](https://jsonplaceholder.typicode.com/posts). We'll also pretend you have a very popular blog - and get 100000 hits per day.
+In the real world you'll probably not return 100000 rows at a time - so let's use a better [example](https://jsonplaceholder.typicode.com/posts). We'll also pretend you have a very popular blog - and get 100000 hits per day.
 
 | Type             | Size (KB) | Bandwith Per Day (KB) | Bandwidth For 30 Days (MB) | Difference Over 30 Days (MB) |
 | :--------------- | :-------: | :-------------------: | :------------------------: | ---------------------------: |

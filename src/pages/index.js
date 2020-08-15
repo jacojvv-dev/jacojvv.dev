@@ -39,6 +39,7 @@ function Home() {
         </section>
         <section className={styles.textCenter}>
           <iframe
+            className={styles.max100}
             width="560"
             height="315"
             src="https://www.youtube-nocookie.com/embed/zxDws0Y5FJ8"
