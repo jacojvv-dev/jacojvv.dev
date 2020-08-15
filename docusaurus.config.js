@@ -1,12 +1,12 @@
 module.exports = {
   title: "jacojvv.dev",
   tagline: "At the moment - it's just a blog",
-  url: "https://jacojvv.dev",
-  baseUrl: "/",
+  url: "https://jacojvv-dev.github.io",
+  baseUrl: "/jacojvv.dev/",
   onBrokenLinks: "throw",
   favicon: "img/favicon.ico",
-  organizationName: "jacojvvdev", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "jacojvv-dev", // Usually your GitHub org/user name.
+  projectName: "jacojvv.dev", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "jacojvv.dev",
