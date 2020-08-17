@@ -176,7 +176,7 @@ fs.writeFileSync("100000.jsonb", JSONB.stringify(data));
 
 \* _If you use my json-b implementation on real world data, you'll probably lose information_
 
-### Yeah - ok. But GZIP fixes the issue you are trying to fix?
+### Yeah - ok. But GZIP fixes the issue, right?
 
 For the most part - it does. But we are trying to squeeze out every byte we can.
 
