@@ -20,9 +20,9 @@ Yeah - anything can. Imagine I'd said the same thing about XML a good few years 
 
 ### The problem
 
-A lot of what we transfer with APIs today is redundant data - namely - property names in JSON. You might think this is negligible detail of the JSON specification and the amount of data that is transferred is minimal - but it will add up over time. As an example of redundancy - let's look at my 4.26 GB CSV file - but convert it to a JSON file and compare the difference in size.
+A lot of what we transfer with APIs today is redundant data - namely - property names in JSON. You might think this is a negligible detail of the JSON specification and the amount of data that is transferred is minimal - but it will add up over time. As an example of redundancy - let's look at my 4.26 GB CSV file - but convert it to a JSON file and compare the difference in size.
 
-_you may be wondering why I am comparing to a CSV file and the reason is rather simple - CSV is doing something right in the way it transfers data. Property names are only ever sent once and only once._
+_you may be wondering why I am comparing to a CSV file and the reason is rather simple - CSV is doing something right in the way it transfers data. Property names are only ever sent once._
 
 ### Converting and comparing the difference in size
 
