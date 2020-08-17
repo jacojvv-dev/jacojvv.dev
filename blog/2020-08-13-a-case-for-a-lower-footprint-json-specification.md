@@ -10,17 +10,17 @@ tags: [json, network traffic, saving polar bears (maybe?), api]
 
 As human beings we tend not to think about things too much once they work. We all have that one application running somewhere on a server rotting away that "just works" - we should probably revise it every now and again - but we don't - because it's a mental load we just don't need.
 
-I'd argue that we apply the same mindset to our daily tools and established patterns - without ever thinking about it too much either. Recently while downloading a 4.26 GB CSV file from an Azure Databricks instance I was reminded of an idea I had a few months ago; JSON can be optimised.
+I'd argue that we apply the same mindset to our daily tools and established patterns - without ever thinking about it too much either. Recently while downloading a 4.26 GB CSV file from an Azure Databricks instance I was reminded of an idea I had a few months ago; JSON can be optimized.
 
 <!--truncate-->
 
-### JSON can be optimised?
+### JSON can be optimized?
 
 Yeah - anything can. Imagine I'd said the same thing about XML a good few years ago - blasphemy. I'd be stoned as soon as people could look away from their (irreplaceable) SOAP services to read my wild ideas!
 
 ### The problem
 
-A lot of what we transfer with APIs today is redundant data - namely - property names in JSON. You might think this is negligible detail of the JSON specification and the amount of data that is transferred is minimal - but it will add up over time. As an example of reduncacy - let's look at my 4.26 GB CSV file - but convert it to a JSON file and compare the difference in size.
+A lot of what we transfer with APIs today is redundant data - namely - property names in JSON. You might think this is negligible detail of the JSON specification and the amount of data that is transferred is minimal - but it will add up over time. As an example of redundancy - let's look at my 4.26 GB CSV file - but convert it to a JSON file and compare the difference in size.
 
 _you may be wondering why I am comparing to a CSV file and the reason is rather simple - CSV is doing something right in the way it transfers data. Property names are only ever sent once and only once._
 
@@ -162,7 +162,7 @@ To compare the results - I wrote a naive [(and very bad, and not feature complet
 const fs = require("fs");
 const JSONB = require("json-b");
 
-// super optimised stuff ;)
+// super optimized stuff ;)
 const data = JSON.parse(fs.readFileSync("100000.json"));
 fs.writeFileSync("100000.jsonb", JSONB.stringify(data));
 ```
@@ -180,22 +180,22 @@ fs.writeFileSync("100000.jsonb", JSONB.stringify(data));
 
 For the most part - it does. But we are trying to squeeze out every byte we can.
 
-| Type             | Size (MB) | Size Reduction (MB) | Size Reduction (%) | Information Lost (%) |
-| :--------------- | :-------: | :-----------------: | :----------------: | -------------------: |
-| JSON (Gzipped)   |   8.84    |          -          |         -          |                    - |
-| JSON-B (Gzipped) |   8.33    |        -0.51        |       -5.77%       |                 0%\* |
+| Type          | Size (MB) | Size Reduction (MB) | Size Reduction (%) | Information Lost (%) |
+| :------------ | :-------: | :-----------------: | :----------------: | -------------------: |
+| JSON (GZIP)   |   8.84    |          -          |         -          |                    - |
+| JSON-B (GZIP) |   8.33    |        -0.51        |       -5.77%       |                 0%\* |
 
-### Ok - so how much bandwith are we talking about saving using json-b and gzip?
+### Ok - so how much bandwidth are we talking about saving using json-b and gzip?
 
 In the real world you'll probably not return 100000 rows at a time - so let's use a better [example](https://jsonplaceholder.typicode.com/posts). We'll also pretend you have a very popular blog - and get 100000 hits per day.
 
-| Type             | Size (KB) | Bandwith Per Day (KB) | Bandwidth For 30 Days (MB) | Difference Over 30 Days (MB) |
-| :--------------- | :-------: | :-------------------: | :------------------------: | ---------------------------: |
-| JSON (Gzipped)   |   6.94    |        694000         |           20820            |                            - |
-| JSON-B (Gzipped) |   6.72    |        672000         |           20160            |                          660 |
+| Type          | Size (KB) | Bandwidth Per Day (KB) | Bandwidth For 30 Days (MB) | Difference Over 30 Days (MB) |
+| :------------ | :-------: | :--------------------: | :------------------------: | ---------------------------: |
+| JSON (GZIP)   |   6.94    |         694000         |           20820            |                            - |
+| JSON-B (GZIP) |   6.72    |         672000         |           20160            |                          660 |
 
 ### Ok. So should we seriously consider doing this?
 
 Probably not. The savings in electricity costs needed to transfer the data might be outweighed by the processing power needed to parse/stringify json-b files. GZIP also does a pretty good job already. Furthermore - in some cases, like where the response is only an object - json-b might make things larger.
 
-It is an interesting thought experiment and I find it very curious to imagine what the global bandwith saving could be if we all used a more optimised JSON.
+It is an interesting thought experiment and I find it very curious to imagine what the global bandwidth saving could be if we all used a more optimise JSON.
