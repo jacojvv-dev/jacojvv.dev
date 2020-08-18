@@ -6,6 +6,7 @@ author_title: Software Developer
 author_url: https://github.com/jacojvv-dev
 author_image_url: https://avatars0.githubusercontent.com/u/14131955?v=4
 tags: [json, network traffic, saving polar bears (maybe?), api]
+image: https://raw.githubusercontent.com/jacojvv-dev/jacojvv.dev/main/static/img/covers/2020-08-13-a-case-for-a-lower-footprint-json-specification.png
 ---
 
 As human beings we tend not to think about things too much once they work. We all have that one application running somewhere on a server rotting away that "just works" - we should probably revise it every now and again - but we don't - because it's a mental load we just don't need.
