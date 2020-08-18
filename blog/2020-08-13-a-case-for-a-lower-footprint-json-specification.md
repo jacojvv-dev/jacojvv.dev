@@ -26,9 +26,9 @@ _you may be wondering why I am comparing to a CSV file and the reason is rather 
 
 ### Converting and comparing the difference in size
 
-To convert the CSV file into JSON - I wrote a little utility using nodejs. Turns our reading and converting 4.26 GB of data wasn't easily possible - and I was too tired to write something elegant - so I opted to just output the JSON at every 100000 lines of CSV.
+To convert the CSV file into JSON - I wrote a little utility using nodejs. I was too tired to make it elegant - so I opted to just output the JSON at every 100000 lines of CSV.
 
-I can already hear someone saying that the extra pair of "[" per file is going to taint the result - but at the scale of the data - I really don't think it will matter.
+I can already hear someone saying that the extra pair of "[" per file is going to taint the result - but at the size of the data - I really don't think it will matter.
 
 ```javascript
 const csv = require("csv-parser");

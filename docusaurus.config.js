@@ -73,6 +73,10 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/jacojvv-dev",
             },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/jacojvv_dev",
+            },
           ],
         },
       ],
