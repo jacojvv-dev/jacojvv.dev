@@ -198,4 +198,4 @@ In the real world you'll probably not return 100000 rows at a time - so let's us
 
 Probably not. The savings in electricity costs needed to transfer the data might be outweighed by the processing power needed to parse/stringify json-b files. GZIP also does a pretty good job already. Furthermore - in some cases, like where the response is only an object - json-b might make things larger.
 
-It is an interesting thought experiment and I find it very curious to imagine what the global bandwidth saving could be if we all used a more optimise JSON.
+It is an interesting thought experiment and I find it very curious to imagine what the global bandwidth saving could be if we all used a more optimized JSON.
