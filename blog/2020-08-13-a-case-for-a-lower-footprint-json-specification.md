@@ -17,7 +17,7 @@ I'd argue that we apply the same mindset to our daily tools and established patt
 
 ### JSON can be optimized?
 
-Yeah - at least - I believe we can. I'm not an expert on the JSON specification or compression by any means - but I still wanted to explore the problem to see if I could bring down the footprint - even if only marginally.
+Yeah - at least - I believe it can. I'm not an expert on the JSON specification or compression by any means - but I still wanted to explore the problem to see if I could bring down the footprint - even if only marginally.
 
 ### The problem
 
