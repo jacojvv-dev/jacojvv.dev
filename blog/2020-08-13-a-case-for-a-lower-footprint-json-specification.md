@@ -17,7 +17,7 @@ I'd argue that we apply the same mindset to our daily tools and established patt
 
 ### JSON can be optimized?
 
-Yeah - anything can. Imagine I'd said the same thing about XML a good few years ago - blasphemy. I'd be stoned as soon as people could look away from their (irreplaceable) SOAP services to read my wild ideas!
+Yeah - at least - I believe we can. I'm not an expert on the JSON specification or compression by any means - but I still wanted to explore the problem to see if I could bring down the footprint - even if only marginally.
 
 ### The problem
 

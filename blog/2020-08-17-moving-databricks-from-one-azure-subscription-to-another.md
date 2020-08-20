@@ -6,6 +6,7 @@ author_title: Software Developer
 author_url: https://github.com/jacojvv-dev
 author_image_url: https://avatars0.githubusercontent.com/u/14131955?v=4
 tags: [azure, databricks]
+draft: true
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
