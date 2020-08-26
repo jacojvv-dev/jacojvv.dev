@@ -8,6 +8,9 @@ module.exports = {
   organizationName: "jacojvv-dev", // Usually your GitHub org/user name.
   projectName: "jacojvv.dev", // Usually your repo name.
   themeConfig: {
+    prism: {
+      additionalLanguages: ["csharp"],
+    },
     navbar: {
       title: "jacojvv.dev",
       // logo: {
