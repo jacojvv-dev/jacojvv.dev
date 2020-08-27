@@ -6,6 +6,7 @@ author_title: Software Developer
 author_url: https://github.com/jacojvv-dev
 author_image_url: https://avatars0.githubusercontent.com/u/14131955?v=4
 tags: [azure, databricks]
+image: /img/2020-08-27-moving-databricks-from-one-azure-subscription-to-another.png
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
