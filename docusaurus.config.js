@@ -7,7 +7,12 @@ module.exports = {
   favicon: "img/favicon.ico",
   organizationName: "jacojvv-dev", // Usually your GitHub org/user name.
   projectName: "jacojvv.dev", // Usually your repo name.
+  plugins: ["@docusaurus/plugin-google-analytics"],
   themeConfig: {
+    googleAnalytics: {
+      trackingID: "UA-176681370-1",
+      anonymizeIP: true,
+    },
     prism: {
       additionalLanguages: ["csharp"],
     },
