@@ -1,6 +1,6 @@
 ---
 id: fun-with-ienumerable-and-collection-initializers
-title: Fun With IEnumerable And Collection Initializers
+title: Fun with IEnumerable and collection initializers
 author: Jaco Jansen van Vuuren
 author_title: Software Developer
 author_url: https://github.com/jacojvv-dev
