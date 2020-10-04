@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[24],{78:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"saving-polar-bears-maybe","name":"saving polar bears (maybe?)","count":1,"permalink":"/blog/tags/saving-polar-bears-maybe"}')}}]);
