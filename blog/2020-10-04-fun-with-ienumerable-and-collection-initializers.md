@@ -6,10 +6,10 @@ author_title: Software Developer
 author_url: https://github.com/jacojvv-dev
 author_image_url: https://avatars0.githubusercontent.com/u/14131955?v=4
 tags: [c#, csharp, ienumerable]
-draft: true
+image: https://www.jacojvv.dev/img/covers/2020-10-04-fun-with-ienumerable-and-collection-initializers.png
 ---
 
-IEnumerable and collection initializers. You probably use them every day (if you write C# code at least) without thinking about the implementation details too much. And honestly - neither did I. But after I got a null reference exception (by accident, of course) whilst doing an assignment to a collection I was reminded about some of the interesting parts of IEnumerable - and some of the crazy stuff you can do with it.
+IEnumerable and collection initializers. You probably use them every day (if you write C# code at least) without thinking about the implementation details too much. And honestly - neither did I. But after I got a null reference exception (by accident, of course) whilst doing an assignment to a collection I was reminded about some of the interesting parts of IEnumerable - and some of the fun stuff you can do with it.
 
 <!--truncate-->
 
