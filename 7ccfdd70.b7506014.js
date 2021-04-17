@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[25],{79:function(n){n.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"linq","name":"linq","count":1,"permalink":"/blog/tags/linq"}')}}]);
